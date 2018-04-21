@@ -1,0 +1,83 @@
+body {
+    background: azure;
+    background-size: auto;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 70px;
+}
+
+aside {
+    max-width: 600px;
+    margin: 0;
+    margin-left: auto;
+}
+.autor {
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+}
+
+header {
+    background-image: url("jeff-bg.png");
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+}
+
+ul {
+    padding: 10px;
+    background: rgba(0, 0, 0, .5);
+    color: white;
+  }
+  
+li {
+    font-size: 20px;
+    padding: 0px 10px 0px 10px;
+    display: inline;
+  }
+
+li a {
+    color: white;
+}
+
+img {
+    height: 320px;
+    width: 240px;
+    border: 7px solid white;
+    border-radius: 20px;
+    margin: 40px 0px 0px 0px;
+}
+
+h2 {
+    text-align: center;
+}
+article {
+    font-family: 'Roboto Slab', serif;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    color: black;
+    font-size: 16px;
+  }
+
+  @media (max-width: 500px) {
+    body {
+      background: red;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    li {
+      display: block;
+      padding: 5px;
+    }
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+}
