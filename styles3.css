@@ -1,0 +1,60 @@
+body {
+    background-image:url("https://html5book.ru/wp-content/uploads/2015/07/background46.png");
+    background-position: center;
+    background-size: auto;
+    margin: 0 auto;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: black;
+}
+
+
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 70px;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    padding: 10px;
+  }
+  
+li {
+    font-size: 20px;
+    padding: 0px 10px 0px 10px;
+    display: inline;
+  }
+ a {
+     cursor: pointer;
+}
+
+
+
+
+h2 {
+    text-align: center;
+}
+article {
+    font-family: 'Roboto Slab', serif;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 36px;
+    }
+    li {
+      display: block;
+      padding: 5px;
+    }
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+}

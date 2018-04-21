@@ -1,7 +1,9 @@
 body {
     background-image:url("https://html5book.ru/wp-content/uploads/2015/07/background46.png");
     background-size: auto;
-    margin: 0;
+    margin: 0 auto;
+    font-family: "Helvetica", "Arial", sans-serif;
+    
 }
 
 h1 {
@@ -17,11 +19,7 @@ aside {
     margin: 0;
     margin-left: auto;
 }
-.autor {
-    text-align: right;
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-}
+
 
 header {
     background-image: url("jeff-bg.png");
@@ -29,11 +27,28 @@ header {
     text-align: center;
     background-size: cover;
 }
+header a {
+    border: 1px solid rgb(10, 209, 159);
+    color: white;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+    margin: 10px 0;
+  }
+  
+  
+  header a:hover {
+    background: rgb(8, 167, 167);
+    color: white;
+  }
 
 ul {
-    padding: 10px;
+    padding: 20px;
     background: rgba(0, 0, 0, .5);
-    color: white;
   }
   
 li {
@@ -42,9 +57,6 @@ li {
     display: inline;
   }
 
-li a {
-    color: white;
-}
 
 img {
     height: 240px;
@@ -59,7 +71,7 @@ h2 {
 }
 article {
     font-family: 'Roboto Slab', serif;
-    max-width: 500px;
+    max-width: 600px;
     padding: 20px;
     margin: 0 auto;
     color: black;
@@ -106,8 +118,9 @@ blockquote:before {
     }
     
 blockquote p {
+    max-height: 100px; 
     margin: 0 0 16px;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: .05em;
     line-height: 1.4;
     }
