@@ -91,10 +91,6 @@ article {
     }
 }
 
-.footer {
-    text-align: center;
-    margin: 20px;
-}
 
 blockquote {
     margin: 0;
@@ -128,4 +124,10 @@ blockquote p {
 blockquote cite {
     font-style: normal;
     font-weight: 300;
+    }
+
+    footer {
+        text-align: center;
+        margin: 20px;
+        color: black;
     }
