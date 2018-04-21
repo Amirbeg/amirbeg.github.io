@@ -128,3 +128,8 @@ blockquote cite {
         margin: 20px;
     }
 
+aside {
+    max-width: 600px;
+    margin: 0;
+    margin-left: auto;
+}
