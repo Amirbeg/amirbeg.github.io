@@ -3,7 +3,7 @@ body {
     background-size: auto;
     margin: 0 auto;
     font-family: "Helvetica", "Arial", sans-serif;
-    height: 100%;
+    
 }
 
 h1 {
@@ -14,15 +14,10 @@ h1 {
     font-family: sans-serif;
 }
 
-aside {
-    max-width: 600px;
-    margin: 0;
-    margin-left: auto;
-}
+
 
 
 header {
-    min-height: 30%;
     background-image: url("jeff-bg.png");
     background-position: center;
     text-align: center;
@@ -71,7 +66,6 @@ h2 {
     text-align: center;
 }
 article {
-    height: 60%;
     font-family: 'Roboto Slab', serif;
     max-width: 600px;
     padding: 20px;
@@ -134,6 +128,3 @@ blockquote cite {
         margin: 20px;
     }
 
-    html {
-        height: 100%;
-    }
