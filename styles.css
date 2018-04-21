@@ -1,0 +1,118 @@
+body {
+    background-image:url("https://html5book.ru/wp-content/uploads/2015/07/background46.png");
+    background-size: auto;
+    margin: 0;
+}
+
+h1 {
+    margin: 0.67em 0;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+aside {
+    max-width: 600px;
+    margin: 0;
+    margin-left: auto;
+}
+.autor {
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+}
+
+header {
+    background-image: url("jeff-bg.png");
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+}
+
+ul {
+    padding: 10px;
+    background: rgba(0, 0, 0, .5);
+    color: white;
+  }
+  
+li {
+    font-size: 20px;
+    padding: 0px 10px 0px 10px;
+    display: inline;
+  }
+
+li a {
+    color: white;
+}
+
+img {
+    height: 240px;
+    width: 180px;
+    border: 7px solid white;
+    border-radius: 20px;
+    margin: 40px 0px 0px 0px;
+}
+
+h2 {
+    text-align: center;
+}
+article {
+    font-family: 'Roboto Slab', serif;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    color: black;
+    font-size: 16px;
+  }
+
+  @media (max-width: 500px) {
+    body {
+      background: red;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    li {
+      display: block;
+      padding: 5px;
+    }
+}
+
+.footer {
+    text-align: center;
+    margin: 20px;
+}
+
+blockquote {
+    margin: 0;
+    background: #F0F0F1;
+    color: #333334;
+    padding: 20px 30px;
+    position: relative;
+    border-left: 35px solid #DFDEDE;
+    font-family: 'Lato', sans-serif;
+    }
+
+blockquote:before {
+    content: "\201C";
+    font-family: serif;
+    position: absolute;
+    left: -29px;
+    top: 5px;
+    color: #BCBCBC;
+    font-size: 50px;
+    text-shadow: 1px 2px 0 white;
+    }
+    
+blockquote p {
+    margin: 0 0 16px;
+    font-size: 20px;
+    letter-spacing: .05em;
+    line-height: 1.4;
+    }
+    
+blockquote cite {
+    font-style: normal;
+    font-weight: 300;
+    }
