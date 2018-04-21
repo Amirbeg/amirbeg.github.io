@@ -5,6 +5,8 @@ body {
     margin: 0 auto;
     font-family: "Helvetica", "Arial", sans-serif;
     color: black;
+    
+    height: 100%;
 }
 
 
@@ -15,6 +17,7 @@ h1 {
 }
 
 header {
+    min-height: 30%;
     text-align: center;
 }
 
@@ -32,12 +35,15 @@ li {
 }
 
 
-
+html {
+    height: 100%;
+}
 
 h2 {
     text-align: center;
 }
 article {
+    min-height: 60%;
     font-family: 'Roboto Slab', serif;
     max-width: 500px;
     padding: 20px;
@@ -56,5 +62,8 @@ article {
 
 footer {
     text-align: center;
-    margin: 20px;
+    margin: 0 auto 0;
+	min-width: 1000px;
+	height: 100px;
+	position: relative;
 }
