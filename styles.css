@@ -57,6 +57,7 @@ header a {
   }
 
 ul {
+    margin: 0 auto;
     padding: 20px;
     background: rgba(0, 0, 0, .5);
   }
