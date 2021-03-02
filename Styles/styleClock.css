@@ -1,0 +1,9 @@
+#timedate {
+    font: small-caps lighter 43px/100% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    grid-area: 3 / 1 / 4 / 4;
+    max-width: 600px;
+    margin: 0;
+    margin-right: auto;
+    visibility: hidden;
+
+}

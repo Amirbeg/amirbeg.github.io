@@ -1,0 +1,137 @@
+body {
+    background-image:url("https://html5book.ru/wp-content/uploads/2015/07/background46.png");
+    background-size: auto;
+    margin: 0 auto;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.container {
+    display: grid;
+    margin: auto;
+    position: relative;
+    grid-gap: 10px;
+    grid-template: repeat(12, auto) / repeat(6, 1fr);
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    color: rgb(75, 130, 155);
+    color: white;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+header {
+    grid-area: 1 / 1 / 3 / 7;
+    background-image: url("bgh.jpg");
+    background-color: #263d36;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 10vw 2em;
+    padding-bottom: 2vw;
+    text-align: center;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    transition: .4s ease-in-out;
+}
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+}
+
+.topmenu > li > a {
+    font-size: 16px;
+}
+
+.topmenu li a:hover { color: white; }
+
+
+.submenu {
+    background:  burlywood;
+    border: 2px solid #003559;
+    position: absolute;
+    left: 10%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    width: 150px;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+}
+
+.subsub{
+    background:  burlywood;
+    width: auto;
+    display: none;
+}
+
+.topmenu > li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+}
+.submenu  > li:hover .submenu >.subsub{
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+}
+
+.topmenu li:hover .submenu {display: block;}
+.submenu li:hover .subsub{display: inline;}
+
+  header a {
+    border: 1px solid rgb(10, 209, 159);
+    border-radius: 290486px;
+    color: white;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+  }
+  
+  
+  header a:hover {
+    background:  #e81c4f;
+    color: white;
+  }
+
+
+
+
+h2 {
+    text-align: center;
+}
+
+article {
+    grid-area: 4 /2/ auto / 6;
+    font-family: 'Roboto Slab', serif;
+    padding: 20px;
+    margin: 0 auto;
+    color: black;
+    font-size: 16px;
+    position: relative;
+    align-items: center;
+  }
+
+ p {
+     text-indent: 25px;
+ }
+
+footer {
+    grid-area: 12/ 1 / 13 / 7;
+    text-align: center;
+}
+
+article video{
+    border: 10px solid black;
+}
+
