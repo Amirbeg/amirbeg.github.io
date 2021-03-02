@@ -2,18 +2,21 @@
 <html lang="en-ru">
 	<head>
 		<meta charset="UTF-8">
-		<link href="styles.css" rel="stylesheet">
+		<link href="Styles/styles.css" rel="stylesheet">
+		<link href="Styles/styleClock.css" rel="stylesheet">
+		<link href="Styles/styleSwimmi.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:400,700|Roboto+Slab:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato:300i,400" rel="stylesheet">
-		<link rel="shortcut icon" href="logo.png" type="image/png">
+		<link rel="shortcut icon" href="Data/logo.png" type="image/png">
 		<title>Welcome Page</title>
+		<script src="indexJS.js"></script>
 	</head>
 	<body>
 		
 		<div class="container">
 		
 			<header>
-				<img src="i.JPG">
+				<img src="Data/i.JPG">
 					<h1>Amirbeg's Blog</h1>
 					<nav>
 						<ul>
@@ -23,8 +26,35 @@
 						</ul>
 					</nav>
 			</header>
-			
-			<aside>
+
+			<div  id="timedate">
+				<a id="mon">January</a>
+				<a id="d">1</a>,
+				<a id="y">0</a><br />
+				<a id="h">12</a> :
+				<a id="m">00</a>:
+				<a id="s">00</a>
+			</div>
+
+			<div id = "swimmi">
+				<img id="mpeil" src="Data/mpei.jpg">
+				<script>
+					window.onload = function() {
+						let start = 10;
+						let fl = 1;
+						let timer = setInterval(function() {
+							if (mpeil.style.left == ((document.documentElement.clientWidth - mpeil.width - 20) + 'px')) fl = 0;
+							else if ( fl) mpeil.style.left = start++  + 'px';
+							if  (mpeil.style.left == 0 + 'px') { fl =1; start = 1;}
+							else if (!fl) mpeil.style.left = 2*(document.documentElement.clientWidth - mpeil.width - 20) - start++ +'px' ;
+
+						}, 1);
+					}
+				</script>
+			</div>
+
+			<aside >
+
 				<blockquote>
 					<p>Терпение и труд все перетрут.</p>
 					<footer>- <cite></cite></footer>
@@ -37,7 +67,7 @@
 			</article>
 			
 			<footer class="footer">
-				<small>Copyright © <time datetime="2018">2018</time></small>
+				<small>Copyright © <time datetime="2021">2021</time></small>
 				<address>Contacts: <a href="mailto:vip.amirbeg@mail.ru">Amirbeg Kurbanov</a> </address>
 			</footer>
 
